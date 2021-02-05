@@ -1,29 +1,35 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-*::before, *::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
   font-family: 'Dosis', sans-serif;
-  line-height: 1.6rem;
+  line-height: 1.6;
   background-color: #fff;
 }
 
 a {
   text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
