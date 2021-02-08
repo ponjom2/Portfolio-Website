@@ -98,6 +98,58 @@ img {
       }
     }
   }
+  // Header Inner 
+  &-inner {
+
+  }
 }
 
-// Section A: Specialize
+// Home Sections A
+#home {
+  &-a {
+    .specials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+      margin-top: 3rem;
+
+      .fas {
+        color: $main-color;
+        padding-bottom: 0.4rem;
+      }
+    }
+  }
+
+  // Home Sections B
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    
+      li {
+        line-height: 2;
+
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+
+        &.stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(odd) {
+          background: $light-color;
+        }
+
+        &:nth-child(even) {
+          background: $medium-color;
+        }
+      } 
+    }
+  }
+}
