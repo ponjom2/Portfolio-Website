@@ -43,7 +43,6 @@ img {
 }
 
 // Main Nav
-
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -96,6 +95,9 @@ img {
   }
   // Header Inner
   &-inner {
+    background: $bg-image no-repeat 20% 30%/cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
