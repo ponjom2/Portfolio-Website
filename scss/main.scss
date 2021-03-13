@@ -1,21 +1,16 @@
-@import 'config';
-@import 'utilities';
+@import "config";
+@import "utilities";
 
 // General Styles
-html {
-  box-sizing: border-box;
-} 
-
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.6;
   background-color: #fff;
 }
@@ -29,7 +24,9 @@ ul {
   list-style: none;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
 
@@ -47,35 +44,34 @@ img {
 
 // Main Nav
 
-#main-nav { 
+#main-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
-  
+
   ul {
-      display: flex;
-    }
+    display: flex;
+  }
 
-    li {
-      padding: 1rem 1.5rem;
-    }
+  li {
+    padding: 1rem 1.5rem;
+  }
 
-    a {
+  a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s;
-  
+
     &:hover {
-      border-color: $medium-color; 
+      border-color: $medium-color;
     }
 
     &.current {
-      border-color: $main-color ;
+      border-color: $main-color;
     }
-
   }
 }
 
@@ -98,9 +94,8 @@ img {
       }
     }
   }
-  // Header Inner 
+  // Header Inner
   &-inner {
-
   }
 }
 
@@ -125,7 +120,7 @@ img {
     .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-    
+
       li {
         line-height: 2;
 
@@ -149,7 +144,87 @@ img {
         &:nth-child(even) {
           background: $medium-color;
         }
-      } 
+      }
+    }
+  }
+
+  // Home Sections C
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      text-align: center;
+
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        background: $main-color;
+        color: set-text-color($main-color);
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
+      }
+
+      // Process-icon
+      &-icon {
+        border-radius: 50%;
+        background: $dark-color;
+        color: set-text-color($dark-color);
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .process-step {
+            background: $dark-color;
+            color: set-text-color($dark-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-color;
+      }
     }
   }
 }

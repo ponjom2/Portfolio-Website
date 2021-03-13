@@ -34,9 +34,9 @@
   }
 }
 
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover {
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
   background-color: $main-color;
 }
 
@@ -95,10 +95,11 @@ input[class^='btn-']:hover {
   font-weight: 100;
   text-transform: uppercase;
 }
+
 .bottom-line {
   height: 2px;
   width: 3rem;
   background: $main-color;
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1rem auto;
 }
