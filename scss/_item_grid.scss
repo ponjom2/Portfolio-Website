@@ -19,7 +19,23 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transform: scale(2) translateX(-75%) translateY(-75) rotate(-28deg);
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
     transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+
+  // Bring in main color overlay
+  &:hover:after {
+    transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+  }
+
+  // Bring image on hover
+  &:hover &-image {
+    transform: scale(1.2);
+  }
+
+  // Bring in text on hover
+  &:hover &-image {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
