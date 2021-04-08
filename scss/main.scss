@@ -95,7 +95,7 @@ img {
   }
   // Header Inner
   &-inner {
-    background: $bg-image no-repeat 20% 30%/cover;
+    background: $bg-image no-repeat 20% 30% / cover;
     height: 5.5rem;
     border-bottom: 3px solid $main-color;
   }
@@ -209,8 +209,8 @@ img {
     .about-info {
       display: grid;
       grid-template-areas:
-        'bioimage bio bio'
-        'aw1 aw2 aw3';
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
       grid-gap: 1.2rem;
     }
 
@@ -218,7 +218,7 @@ img {
     .bio-image {
       grid-area: bioimage;
     }
-    
+
     .bio {
       grid-area: bio;
       border-left: 3px solid $main-color;
@@ -228,7 +228,7 @@ img {
     .award-1 {
       grid-area: aw1;
     }
-    
+
     .award-2 {
       grid-area: aw2;
     }
@@ -270,9 +270,9 @@ img {
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 2rem;
 
-        img {
-          width: 70%;
-        }
+      img {
+        width: 70%;
+      }
     }
   }
 
@@ -293,7 +293,7 @@ img {
       p {
         border: 1px solid $medium-color;
         border-radius: 5px;
-        padding: 0.5rem
+        padding: 0.5rem;
       }
 
       img {
